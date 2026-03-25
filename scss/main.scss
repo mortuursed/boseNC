@@ -2,6 +2,7 @@
 @use "./base/var";
 @use "./base/commen";
 @use "./base/container";
+@use "./section/header";
 @use "./section/bose";
 @use "./section/premium";
 @use "./section/capable";
@@ -10,4 +11,8 @@
 @use "./section/garni";
 @use "./section/history";
 @use "./section/reviews";
+@use "./section/faq";
+@use "./section/nc";
+@use "./section/bgm";
+@use "./section/feedback";
 @use "./section/footer";

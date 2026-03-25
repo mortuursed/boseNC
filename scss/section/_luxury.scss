@@ -1,0 +1,78 @@
+@use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.luxury {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+&__list{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+  &__title{
+    width: 280px;
+    margin-bottom: 32px;
+    color:$title__color;
+font-family: Gilroy;
+font-size: 24px;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0.48px;
+text-transform: uppercase;
+
+@media screen and (min-width:708px) {
+   text-align: end;
+   width: 100%;
+font-family: Gilroy;
+font-size: 30px;
+letter-spacing: 0.6px;
+}
+  }
+
+  &__img{
+    width: 280.0px;
+height: 293.0px;
+margin-bottom: 32px;
+
+@media screen and (min-width:708px) {
+    width: 100%;
+}
+
+  }
+
+
+  &__suptitle{
+    margin-bottom: 16px;
+    color:$title--color;
+font-family: Gilroy;
+font-size: 20px;
+font-weight: 400;
+line-height: 125%;
+  }
+
+  &__text{
+   width: 280px;
+   color:$text--color;
+font-family: Gilroy;
+font-size: 14px;
+font-weight: 400;
+line-height: 125%;
+
+  }
+}

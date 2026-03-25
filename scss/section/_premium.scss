@@ -1,0 +1,132 @@
+@use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.premium {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @media screen and (min-width: 708px) {
+    padding-top: 100px;
+    padding-bottom: 128px;
+  }
+
+&__boxer{
+  @media screen and (min-width:708px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+  // &__box {
+  //   @media screen and (min-width: 708px) {
+  //     display: flex;
+  //   }
+  // }
+
+  &__title {
+    width: 206px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 708px) {
+      font-size: 30px;
+      letter-spacing: 0.6px;
+      width: 294px;
+    }
+  }
+
+  &__suptitle {
+    margin-bottom: 16px;
+    width: 242px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    width: 280px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+  }
+
+  &__newtitle {
+    width: 223px;
+    margin-bottom: 16px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 20px;
+    }
+  }
+
+  &__newtxt {
+    margin-bottom: 32px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+  }
+
+  &__img {
+    width: 280px;
+    height: 293px;
+
+    @media screen and (min-width: 708px) {
+      width: 354px;
+      height: 540px;
+      transform: translateX(-42px);
+
+      //  position: absolute;
+      // right: 0;
+    }
+  }
+}

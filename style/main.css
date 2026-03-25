@@ -1,1 +1,512 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  background-color: #191919;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  outline: 1px solid rgb(4, 5, 99);
+}
+@media screen and (min-width: 300px) {
+  .container {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 708px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1320px;
+  }
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
+.header__boxer {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 137px;
+  height: 23px;
+}
+.header__btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.header__burger {
+  fill: #E7E7E7;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 1320px) {
+  .header__burger {
+    display: none;
+  }
+}
+.header__box {
+  display: none;
+}
+@media screen and (min-width: 1320px) {
+  .header__box {
+    margin-left: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .header__list {
+    display: flex;
+    gap: 77px;
+    margin-left: 530px;
+  }
+}
+.header__web {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.bose {
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .bose {
+    padding-top: 51px;
+    padding-bottom: 101px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .bose {
+    padding-top: 74px;
+    padding-bottom: 174px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .bose__box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+.bose__text {
+  width: 230px;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 708px) {
+  .bose__text {
+    margin-bottom: 16px;
+    width: 260px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+.bose__txt {
+  width: 110px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .bose__txt {
+    width: 110px;
+    margin-bottom: 105px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+.bose__title {
+  width: 234px;
+  margin-top: 34px;
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.68px;
+  text-transform: uppercase;
+}
+.bose__btn {
+  background-color: #DF3D3A;
+  border: none;
+  padding: 19px 113px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+.bose__img {
+  width: 280px;
+  height: 240px;
+}
+@media screen and (min-width: 708px) {
+  .bose__img {
+    width: 354px;
+    height: 359px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.premium {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .premium {
+    padding-top: 100px;
+    padding-bottom: 128px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .premium__boxer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.premium__title {
+  width: 206px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .premium__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    width: 294px;
+  }
+}
+.premium__suptitle {
+  margin-bottom: 16px;
+  width: 242px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .premium__suptitle {
+    width: 294px;
+    font-size: 20px;
+  }
+}
+.premium__text {
+  margin-bottom: 24px;
+  width: 280px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .premium__text {
+    width: 294px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+.premium__newtitle {
+  width: 223px;
+  margin-bottom: 16px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .premium__newtitle {
+    width: 294px;
+    font-size: 20px;
+  }
+}
+.premium__newtxt {
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .premium__newtxt {
+    width: 294px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+.premium__img {
+  width: 280px;
+  height: 293px;
+}
+@media screen and (min-width: 708px) {
+  .premium__img {
+    width: 354px;
+    height: 540px;
+    transform: translateX(-42px);
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.capable {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .capable {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1320px) {
+  .capable .container {
+    padding-left: 110px;
+  }
+}
+.capable__title {
+  width: 280px;
+  margin-bottom: 36px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .capable__title {
+    width: 412px;
+    margin-bottom: 32px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+.capable__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 708px) {
+  .capable__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .capable__list {
+    flex-direction: row;
+    gap: 220px;
+  }
+}
+.capable__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.capable__item {
+  display: flex;
+  gap: 24px;
+}
+.capable__item::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #DF3D3A;
+}
+.capable__text {
+  width: 216px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .capable__text {
+    width: 320px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.luxury {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.luxury__list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.luxury__title {
+  width: 280px;
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .luxury__title {
+    text-align: end;
+    width: 100%;
+    font-family: Gilroy;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+.luxury__img {
+  width: 280px;
+  height: 293px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .luxury__img {
+    width: 100%;
+  }
+}
+.luxury__suptitle {
+  margin-bottom: 16px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+}
+.luxury__text {
+  width: 280px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}/*# sourceMappingURL=main.css.map */

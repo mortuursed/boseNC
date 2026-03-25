@@ -1,0 +1,64 @@
+@use "../base/var" as *;
+.header {
+  padding-top: 30px;
+  padding-bottom: 32px;
+
+  &__boxer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 137px;
+    height: 23px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  &__burger {
+    fill: $title--color;
+    width: 30px;
+    height: 30px;
+    @media screen and (min-width:1320px) {
+        display: none;
+    }
+  }
+
+
+  &__box{
+    display: none;
+
+    @media screen and (min-width:1320px) {
+      margin-left: auto;
+      display: block;
+    }
+  }
+
+  &__list{
+    @media screen and (min-width:1320px) {
+      display: flex;
+      gap: 77px;
+      margin-left: 530px;
+    }
+  }
+
+
+  // &__item{
+    
+  // }
+
+  &__web{
+    color:$text--color;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+  }
+}
