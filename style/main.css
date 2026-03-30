@@ -59,6 +59,18 @@ body {
   padding-top: 30px;
   padding-bottom: 32px;
 }
+@media screen and (min-width: 708px) {
+  .header {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .header {
+    padding-top: 64px;
+    padding-bottom: 170px;
+  }
+}
 .header__boxer {
   display: flex;
   align-items: center;
@@ -108,6 +120,12 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (min-width: 1320px) {
+  .header__web {
+    width: 159px;
+    font-size: 16px;
+  }
+}
 
 @font-face {
   font-family: "Gilroy";
@@ -145,6 +163,11 @@ body {
     position: relative;
   }
 }
+@media screen and (min-width: 1320px) {
+  .bose__wraper {
+    margin-left: 110px;
+  }
+}
 .bose__text {
   width: 230px;
   height: 36px;
@@ -166,6 +189,12 @@ body {
     line-height: 145%;
   }
 }
+@media screen and (min-width: 1320px) {
+  .bose__text {
+    width: 321px;
+    line-height: 125%;
+  }
+}
 .bose__txt {
   width: 110px;
   color: rgba(255, 255, 255, 0.8);
@@ -179,10 +208,13 @@ body {
     width: 110px;
     margin-bottom: 105px;
     color: rgba(255, 255, 255, 0.8);
-    font-family: Gilroy;
     font-size: 16px;
-    font-weight: 400;
     line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .bose__txt {
+    line-height: 125%;
   }
 }
 .bose__title {
@@ -198,7 +230,28 @@ body {
   letter-spacing: 0.68px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 708px) {
+  .bose__title {
+    margin-top: 105px;
+    margin-bottom: 40px;
+    width: 289px;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .bose__title {
+    margin-top: 94px;
+    margin-bottom: 86px;
+    width: 671px;
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: 1.48px;
+  }
+}
 .bose__btn {
+  margin-bottom: 32px;
   background-color: #DF3D3A;
   border: none;
   padding: 19px 113px;
@@ -210,6 +263,20 @@ body {
   letter-spacing: 0.32px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 708px) {
+  .bose__btn {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .bose__btn {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    padding: 21px 166px;
+  }
+}
 .bose__img {
   width: 280px;
   height: 240px;
@@ -217,9 +284,15 @@ body {
 @media screen and (min-width: 708px) {
   .bose__img {
     width: 354px;
-    height: 359px;
+    height: 415px;
     position: absolute;
     right: 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .bose__img {
+    width: 620px;
+    height: 527px;
   }
 }
 
@@ -271,6 +344,14 @@ body {
     width: 294px;
   }
 }
+@media screen and (min-width: 1320px) {
+  .premium__title {
+    width: 460px;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.08px;
+  }
+}
 .premium__suptitle {
   margin-bottom: 16px;
   width: 242px;
@@ -284,6 +365,13 @@ body {
   .premium__suptitle {
     width: 294px;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .premium__suptitle {
+    width: 412px;
+    font-size: 28px;
+    line-height: 125%;
   }
 }
 .premium__text {
@@ -302,6 +390,14 @@ body {
     line-height: 145%;
   }
 }
+@media screen and (min-width: 1320px) {
+  .premium__text {
+    width: 510px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
 .premium__newtitle {
   width: 223px;
   margin-bottom: 16px;
@@ -315,6 +411,14 @@ body {
   .premium__newtitle {
     width: 294px;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .premium__newtitle {
+    width: 412px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 125%;
   }
 }
 .premium__newtxt {
@@ -333,6 +437,14 @@ body {
     line-height: 145%;
   }
 }
+@media screen and (min-width: 1320px) {
+  .premium__newtxt {
+    width: 510px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
 .premium__img {
   width: 280px;
   height: 293px;
@@ -342,6 +454,12 @@ body {
     width: 354px;
     height: 540px;
     transform: translateX(-42px);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .premium__img {
+    width: 590px;
+    height: 616px;
   }
 }
 
@@ -365,6 +483,13 @@ body {
 @media screen and (min-width: 708px) {
   .capable {
     padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .capable {
+    padding-top: 170px;
+    padding-bottom: 170px;
   }
 }
 @media (min-width: 1320px) {
@@ -464,6 +589,18 @@ body {
   flex-direction: column;
   gap: 42px;
 }
+@media screen and (min-width: 708px) {
+  .luxury__list {
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .luxury__list {
+    gap: 40px;
+  }
+}
 .luxury__title {
   width: 280px;
   margin-bottom: 32px;
@@ -484,14 +621,24 @@ body {
     letter-spacing: 0.6px;
   }
 }
+@media screen and (min-width: 1320px) {
+  .luxury__title {
+    width: 700px;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 1.08px;
+    margin-left: auto;
+  }
+}
 .luxury__img {
-  width: 280px;
+  width: 100%;
   height: 293px;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 708px) {
+@media (min-width: 1320px) {
   .luxury__img {
-    width: 100%;
+    height: 524px;
   }
 }
 .luxury__suptitle {
@@ -509,4 +656,324 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .luxury__text {
+    width: 285px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .luxury__text {
+    width: 510px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.ar {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .ar {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar {
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .ar__boxer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.ar__title {
+  width: 103px;
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .ar__title {
+    width: 130px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar__title {
+    width: 223px;
+  }
+}
+.ar__preface {
+  margin-bottom: 16px;
+  width: 225px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+@media screen and (min-width: 1320px) {
+  .ar__preface {
+    width: 311px;
+  }
+}
+.ar__text {
+  width: 280px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .ar__text {
+    width: 295px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar__text {
+    width: 380px;
+  }
+}
+.ar__img {
+  width: 280px;
+}
+@media screen and (min-width: 708px) {
+  .ar__img {
+    width: 354px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar__img {
+    width: 700px;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.garni {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .garni {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni {
+    background-image: url(../img/union.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom 54px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .garni__boxer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__boxer {
+    align-items: center;
+    justify-content: start;
+    gap: 150px;
+  }
+}
+.garni__title {
+  width: 154px;
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .garni__title {
+    width: 192px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__title {
+    width: 354px;
+    font-size: 54px;
+    letter-spacing: 1.08px;
+  }
+}
+.garni__suptitle {
+  width: 154px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 708px) {
+  .garni__suptitle {
+    width: 294px;
+  }
+}
+.garni__suptitle::before {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #DF3D3A;
+}
+@media screen and (min-width: 708px) {
+  .garni__suptitle::before {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__suptitle {
+    width: 409px;
+    font-size: 28px;
+  }
+}
+.garni__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 708px) {
+  .garni__text {
+    width: 294px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__text {
+    width: 406px;
+    font-size: 20px;
+    line-height: 145%;
+    margin-bottom: 69px;
+  }
+}
+.garni__txt {
+  width: 280px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .garni__txt {
+    width: 294px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__txt {
+    width: 380px;
+    font-size: 20px;
+    line-height: 145%;
+    margin-bottom: 0;
+  }
+}
+.garni__img {
+  width: 280px;
+}
+@media screen and (min-width: 708px) {
+  .garni__img {
+    width: 354px;
+    height: 417px;
+    transform: translateX(-49px);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .garni__img {
+    width: 590px;
+    height: 565px;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.history {
+  padding-top: 52px;
+  padding-bottom: 52px;
 }/*# sourceMappingURL=main.css.map */

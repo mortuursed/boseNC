@@ -1,1 +1,168 @@
 @use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.garni {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @media screen and (min-width:708px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1320px) {
+    background-image: url(../img/union.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom 54px;
+    padding-top: 170px ;
+    padding-bottom: 170px ;
+  }
+
+  &__boxer {
+    @media screen and (min-width: 708px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      align-items: center;
+      justify-content: start;
+      gap: 150px;
+    }
+  }
+
+  &__title {
+    width: 154px;
+    margin-bottom: 32px;
+    color: $title__color;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 708px) {
+      width: 192px;
+      font-size: 30px;
+      letter-spacing: 0.6px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 354px;
+      font-size: 54px;
+      letter-spacing: 1.08px;
+    }
+  }
+
+  &__suptitle {
+    width: 154px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      margin-bottom: 10px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: $button--color;
+
+      @media screen and (min-width: 708px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 409px;
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 406px;
+      font-size: 20px;
+      line-height: 145%;
+      margin-bottom: 69px;
+    }
+  }
+
+  &__txt {
+    width: 280px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 145%;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 380px;
+      font-size: 20px;
+      line-height: 145%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 280px;
+    @media screen and (min-width: 708px) {
+      width: 354px;
+      height: 417px;
+      transform: translateX(-49px);
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 590px;
+      height: 565px;
+    }
+  }
+}

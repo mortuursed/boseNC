@@ -1,1 +1,22 @@
 @use "../base/var" as *;
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.history{
+    padding-top: 52px;
+    padding-bottom: 52px;
+}

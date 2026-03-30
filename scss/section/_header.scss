@@ -3,6 +3,16 @@
   padding-top: 30px;
   padding-bottom: 32px;
 
+  @media screen and (min-width:708px) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width:1320px) {
+    padding-top: 64px;
+    padding-bottom: 170px;
+  }
+
   &__boxer {
     display: flex;
     align-items: center;
@@ -60,5 +70,10 @@ font-family: Gilroy;
 font-size: 16px;
 font-weight: 400;
 line-height: normal;
+
+@media screen and (min-width:1320px) {
+   width: 159px;
+font-size: 16px;
+}
   }
 }

@@ -21,6 +21,12 @@
 
   @media screen and (min-width: 708px) {
     padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width:1320px) {
+    padding-top: 170px;
+    padding-bottom: 170px;
   }
 
 & .container{
