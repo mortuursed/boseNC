@@ -19,21 +19,63 @@
   padding-top: 52px;
   padding-bottom: 52px;
 
-  @media screen and (min-width:708px) {
+  @media screen and (min-width: 708px) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  &__boxer{
-    @media screen and (min-width:708px) {
-    //   display:flex ;
-    // flex-direction: row;
+  &__box {
+    // position: relative;
+  }
+
+  &__boxer {
+    @media screen and (min-width: 708px) {
+      position: relative;
+      // margin-bottom: px;
+    }
+    // @media screen and (min-width:1320px) {
+
+    // }
+  }
+
+  &__mix {
+    @media screen and (min-width: 708px) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
     }
   }
 
   &__icon {
     width: 34px;
     height: 25px;
+
+    @media screen and (min-width:708px) {
+      margin-top: 130px;
+      margin-bottom: 52px;
+      margin-right: 250px;
+    }
+  }
+
+  &__head {
+    @media screen and (min-width: 708px) {
+      width: 354px;
+      height: 524px;
+      position: absolute;
+      top: 0;
+      right: -100px;
+    }
+  }
+
+  &__man {
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      height: 355px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   &__title {
@@ -57,14 +99,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+  }
+
+  &__bose{
+    @media screen and (min-width:708px) {
+    }
   }
 
   &__from {
     margin-top: 32px;
+
+    @media screen and (min-width: 708px) {
+      margin-top: 85px;
+    }
   }
 
   &__man {
     margin-bottom: 32px;
+    @media screen and (min-width: 708px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__dream {

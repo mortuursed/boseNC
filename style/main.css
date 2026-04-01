@@ -983,9 +983,47 @@ body {
     padding-bottom: 100px;
   }
 }
+@media screen and (min-width: 708px) {
+  .history__boxer {
+    position: relative;
+  }
+}
+@media screen and (min-width: 708px) {
+  .history__mix {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
 .history__icon {
   width: 34px;
   height: 25px;
+}
+@media screen and (min-width: 708px) {
+  .history__icon {
+    margin-top: 130px;
+    margin-bottom: 52px;
+    margin-right: 250px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .history__head {
+    width: 354px;
+    height: 524px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .history__man {
+    width: 294px;
+    height: 355px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 .history__title {
   width: 124px;
@@ -1008,11 +1046,28 @@ body {
   font-weight: 400;
   line-height: 125%;
 }
+@media screen and (min-width: 708px) {
+  .history__text {
+    width: 294px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
 .history__from {
   margin-top: 32px;
 }
+@media screen and (min-width: 708px) {
+  .history__from {
+    margin-top: 85px;
+  }
+}
 .history__man {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .history__man {
+    margin-bottom: 0px;
+  }
 }
 .history__dream {
   width: 280px;
