@@ -1,1 +1,141 @@
 @use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.reviews {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @media screen and (min-width: 708px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__boxer {
+    @media screen and (min-width: 1320px) {
+      position: relative;
+    }
+  }
+
+  &__wrap{
+    @media screen and (min-width:1320px) {
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 708px) {
+      font-size: 30px;
+      letter-spacing: 0.6px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      margin-right: 27px;
+      font-size: 54px;
+      letter-spacing: 1.08px;
+      text-align: end;
+    }
+  }
+
+  &__video {
+    width: 100%;
+height: 180.0px;
+
+
+    @media screen and (min-width: 708px) {
+      height: 417px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 920.0px;
+      height: 590px;
+     position: absolute;
+     top:0;
+     left: 0;
+    }
+  }
+
+  &__suptitle {
+    width: 163px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: $button--color;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 165px;
+    }
+
+      @media screen and (min-width:1320px) {
+        width:227px;
+    }
+  }
+
+  &__text {
+    width: 258px;
+    margin-bottom: 32px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 530px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 258px;
+      font-size: 20px;
+      line-height: 145%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 39px;
+  }
+
+  &__button {
+    color: $button--color;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    opacity: 0.2;
+    background: transparent;
+    border: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

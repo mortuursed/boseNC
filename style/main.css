@@ -977,8 +977,194 @@ body {
   padding-top: 52px;
   padding-bottom: 52px;
 }
+@media screen and (min-width: 708px) {
+  .history {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.history__icon {
+  width: 34px;
+  height: 25px;
+}
+.history__title {
+  width: 124px;
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
 .history__text {
-  color: aqua;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 32px;
+  width: 280px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.history__from {
+  margin-top: 32px;
+}
+.history__man {
+  margin-bottom: 32px;
+}
+.history__dream {
+  width: 280px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.history__ps {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+.reviews {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__boxer {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__wrap {
+    display: flex;
+    justify-content: end;
+  }
+}
+.reviews__title {
+  margin-bottom: 32px;
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .reviews__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__title {
+    margin-right: 27px;
+    font-size: 54px;
+    letter-spacing: 1.08px;
+    text-align: end;
+  }
+}
+.reviews__video {
+  width: 100%;
+  height: 180px;
+}
+@media screen and (min-width: 708px) {
+  .reviews__video {
+    height: 417px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__video {
+    width: 920px;
+    height: 590px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.reviews__suptitle {
+  width: 163px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #DF3D3A;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .reviews__suptitle {
+    width: 165px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__suptitle {
+    width: 227px;
+  }
+}
+.reviews__text {
+  width: 258px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}
+@media screen and (min-width: 708px) {
+  .reviews__text {
+    width: 530px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews__text {
+    width: 258px;
+    font-size: 20px;
+    line-height: 145%;
+  }
+}
+.reviews__list {
+  display: flex;
+  gap: 39px;
+}
+.reviews__button {
+  color: #DF3D3A;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  opacity: 0.2;
+  background: transparent;
+  border: none;
+}
+.reviews__button:hover {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

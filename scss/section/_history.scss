@@ -1,6 +1,5 @@
 @use "../base/var" as *;
 
-
 @font-face {
   font-family: "Gilroy";
   src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
@@ -16,14 +15,74 @@
   font-style: normal;
 }
 
-.history{
-    padding-top: 52px;
-    padding-bottom: 52px;
+.history {
+  padding-top: 52px;
+  padding-bottom: 52px;
 
+  @media screen and (min-width:708px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-    &__text{
-      color: aqua;
-      margin-bottom: 40px;
-      margin-top: 40px;
+  &__boxer{
+    @media screen and (min-width:708px) {
+    //   display:flex ;
+    // flex-direction: row;
     }
+  }
+
+  &__icon {
+    width: 34px;
+    height: 25px;
+  }
+
+  &__title {
+    width: 124px;
+    margin-bottom: 32px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    width: 280px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+
+  &__from {
+    margin-top: 32px;
+  }
+
+  &__man {
+    margin-bottom: 32px;
+  }
+
+  &__dream {
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  &__ps {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+  }
 }
