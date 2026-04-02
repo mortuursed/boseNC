@@ -1,1 +1,103 @@
 @use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.faq {
+  padding-top: 16px;
+  padding-bottom: 52px;
+
+  &__svg {
+    width: 8px;
+    height: 14px;
+    fill: $title--color;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: auto;
+  }
+
+  &__item {
+    display: flex;
+    border-bottom: solid rgba(255, 255, 255, 0.1);
+    margin-top: 24px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    color: $title--color;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    width: 20px;
+    height: 14px;
+    color: $title--color;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70%;
+
+    @media screen and (min-width: 708px) {
+      width: 20px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 28px;
+      font-size: 28px;
+      line-height: 125%;
+    }
+  }
+
+  &__question {
+    text-align: start;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      width: 344px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 721px;
+      font-size: 28px;
+      line-height: 125%;
+    }
+  }
+}
