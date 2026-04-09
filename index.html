@@ -325,6 +325,9 @@
             audio recording, his bewilderment turned to disappointment.
           </p>
           <picture>
+            <source srcset="./img/pc/history@1x_desktop.png 1x, ./img/pc/history@2x_desktop.png 2x">
+            <source srcset="./img/tablet/history@1x_tablet.png 1x, ./img/tablet/history@2x_tablet.png 2x">
+            <source srcset="./img/phone/history@1x_mobile.png 1x, ./img/phone/history@2x_mobile.png 2x">
             <img
               class="history__head"
               src="./img/phone/history@1x_mobile.png"
@@ -344,6 +347,9 @@
             naturalness
           </p>
           <picture>
+             <source srcset="./img/pc/historyman@1x_desktop.png 1x, ./img/pc/historyman@2x_desktop.png 2x">
+            <source srcset="./img/tablet/historyman@1x_tablet.png 1x, ./img/tablet/historyman@2x_tablet.png 2x">
+            <source srcset="./img/phone/historyman@1x_mobile.png 1x, ./img/phone/historyman@2x_mobile.png 2x">
             <img
               class="history__man"
               src="./img/phone/historyman@1x_mobile.png"
@@ -439,12 +445,14 @@
       <section class="nc">
         <div class="container">
           <h2 class="nc__title">bose nc 700</h2>
-          <picture>
-            <img src="./img/phone/bosenc@1x_mobile.png" alt="bosenc">
+          <picture class="nc__picture">
+            <img class="nc__img" src="./img/phone/bosenc@1x_mobile.png" alt="bosenc">
           </picture>
           <div class="nc__ins">
-            <button class="nc__button"></button>
-            <button class="nc__button"></button>
+            <div class="nc__wrap">
+            <button class="nc__button1"><div class="nc__color1"></div></button>
+            <button class="nc__button2"><div class="nc__color2"></div></button>
+            </div>
             <ul class="nc__list">
               <li class="nc__item">
                 <p class="nc__text">Availability in stores</p>
@@ -466,17 +474,49 @@
               </li>
             </ul>
           </div>
+          <h3 class="nc__prise">14 999 UAH</h3>
+          <button class="nc__order">order</button>
         </div>
       </section>
       <section class="bgm">
-        <div class="container"></div>
+        <div class="container">
+          <picture>
+            <img class="bgm__img" src="./img/phone/workgirl@1x_mobile.png" alt="">
+          </picture>
+        </div>
       </section>
       <section class="feedback">
-        <div class="container"></div>
+        <div class="container feedback__wrap">
+          <div class="feedback__boxer">
+          <h2 class="feedback__title">Feedback</h2>
+          <p class="feedback__text">We'll help you find the right headphones for you.</p>
+          </div>
+          <form class="feedback__form">
+            <input type="text" class="feedback__input" placeholder="Your name">
+            <input type="email" class="feedback__input" placeholder="Your e-mail">
+            <textarea class="feedback__input" placeholder="Send us a message"></textarea>
+            <div class="feedback__agree">
+            <input type="checkbox" class="feedback__check">
+            <p class="feedback__suptext">I agree to the  </p>
+            <a href="#" class="feedback__go">privacy policy</a>
+            </div>
+            <button class="feedback__button" type="submit">send</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="" class="footer__link">Characteristics</a></li>
+          <li class="footer__item"><a href="" class="footer__link">History</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Reviews</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Payment and delivery</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Store addresses</a></li>
+          <li class="footer__item"><a href="" class="footer__link">FAQ</a></li>
+          <a href="">8 (800) 111-11-11</a>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

@@ -16,12 +16,19 @@
 }
 
 .history {
-  padding-top: 52px;
   padding-bottom: 52px;
 
   @media screen and (min-width: 708px) {
-    padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  @media screen and (min-width:1320px) {
+    padding-bottom: 170px;
+  }
+
+
+  &__box{
+    overflow: hidden;
   }
 
   &__boxer {
@@ -56,7 +63,7 @@
 
   &__head {
     @media screen and (min-width: 708px) {
-      width: 354px;
+      width: 400px;
       height: 524px;
       position: absolute;
       top: 0;

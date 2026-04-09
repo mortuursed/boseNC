@@ -1,1 +1,41 @@
 @use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.footer {
+  padding-bottom: 52px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis:calc(100%/2);
+    &:nth-child(n+2){
+        // margin-left: auto;
+        text-align: end;
+    }
+    &:nth-child(odd){
+        text-align: start;
+    }
+  }
+
+  &__link{
+    width: 140px;
+  }
+}

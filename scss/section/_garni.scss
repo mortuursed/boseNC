@@ -16,18 +16,15 @@
 }
 
 .garni {
-  padding-top: 52px;
   padding-bottom: 52px;
 
   @media screen and (min-width:708px) {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: 1320px) {
     background-image: url(../img/union.svg);
     background-repeat: no-repeat;
     background-position: right bottom 54px;
-    padding-top: 170px ;
     padding-bottom: 170px ;
   }
 

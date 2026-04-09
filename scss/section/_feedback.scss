@@ -1,1 +1,185 @@
 @use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.feedback {
+  padding-bottom: 76px;
+
+  @media screen and (min-width: 708px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1320px) {
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+
+  &__wrap {
+    @media screen and (min-width: 1320px) {
+      display: flex;
+      gap: 250px;
+    }
+  }
+
+  &__title {
+    color: $title--color;
+    margin-bottom: 32px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 708px) {
+      width: 400px;
+      font-size: 30px;
+      letter-spacing: 0.6px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      font-size: 54px;
+      letter-spacing: 1.08px;
+    }
+  }
+
+  &__text {
+    width: 281px;
+    margin-bottom: 40px;
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      font-size: 20px;
+      margin-bottom: 52px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      font-size: 28px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    width: 280px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 708px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 510px;
+      margin-bottom: 42px;
+      padding-bottom: 17px;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 60px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 1320px) {
+    }
+  }
+
+  &__agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 5px;
+
+    @media screen and (min-width: 708px) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &__check {
+    border: 2px solid var(--5-1, #e9edfa);
+    width: 30px;
+    height: 28px;
+  }
+
+  &__suptext {
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+
+  &__go {
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 1px solid $button--color;
+    padding: 20px 120px;
+    color: $suptext--color;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 708px) {
+      width: 294px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      padding: 22px 229px;
+      width: 510px;
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+}
