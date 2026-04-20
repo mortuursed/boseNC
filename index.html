@@ -23,10 +23,28 @@
   <body>
     <header class="header">
       <div class="container header__boxer">
+        <!-- --------------------------------- -->
+
+        <div class="menu is-hidden" data-menu>
+          <button type="button" class="menu__close" data-menu-close><svg class="menu__cross">
+            <use href="./img/symbol-devs.svg#icon-cross"></use>
+          </svg></button>
+          <a href="#" class="menu__link"
+          ><svg class="menu__log">
+            <use href="./img/bose-logo.svg"></use></svg></a>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Characteristics</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">History</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Reviews</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Payment and delivery</a></li>
+            </ul>
+        </div>
+
+        <!-- --------------------------------- -->
         <a href="#" class="header__link"
           ><svg class="header__logo">
             <use href="./img/bose-logo.svg"></use></svg></a>
-        <button type="button" class="header__btn">
+        <button type="button" class="header__btn" data-menu-open>
           <svg class="header__burger">
             <use href="./img/symbol-devs.svg#icon-menu"></use>
           </svg>
@@ -325,9 +343,9 @@
             audio recording, his bewilderment turned to disappointment.
           </p>
           <picture>
-            <source srcset="./img/pc/history@1x_desktop.png 1x, ./img/pc/history@2x_desktop.png 2x">
-            <source srcset="./img/tablet/history@1x_tablet.png 1x, ./img/tablet/history@2x_tablet.png 2x">
-            <source srcset="./img/phone/history@1x_mobile.png 1x, ./img/phone/history@2x_mobile.png 2x">
+            <source srcset="./img/pc/history@1x_desktop.png 1x, ./img/pc/history@2x_desktop.png 2x" media="(min-width:1320px)">
+            <source srcset="./img/tablet/history@1x_tablet.png 1x, ./img/tablet/history@2x_tablet.png 2x"  media="(min-width:708px)">
+            <source srcset="./img/phone/history@1x_mobile.png 1x, ./img/phone/history@2x_mobile.png 2x" media="(max-width;707px)">
             <img
               class="history__head"
               src="./img/phone/history@1x_mobile.png"
@@ -347,9 +365,9 @@
             naturalness
           </p>
           <picture>
-             <source srcset="./img/pc/historyman@1x_desktop.png 1x, ./img/pc/historyman@2x_desktop.png 2x">
-            <source srcset="./img/tablet/historyman@1x_tablet.png 1x, ./img/tablet/historyman@2x_tablet.png 2x">
-            <source srcset="./img/phone/historyman@1x_mobile.png 1x, ./img/phone/historyman@2x_mobile.png 2x">
+             <source srcset="./img/pc/historyman@1x_desktop.png 1x, ./img/pc/historyman@2x_desktop.png 2x" media="(min-width:1320px)">
+            <source srcset="./img/tablet/historyman@1x_tablet.png 1x, ./img/tablet/historyman@2x_tablet.png 2x" media="(min-width:708px)">
+            <source srcset="./img/phone/historyman@1x_mobile.png 1x, ./img/phone/historyman@2x_mobile.png 2x" media="(max-width;707px)">
             <img
               class="history__man"
               src="./img/phone/historyman@1x_mobile.png"
@@ -446,6 +464,9 @@
         <div class="container">
           <h2 class="nc__title">bose nc 700</h2>
           <picture class="nc__picture">
+            <source srcset="./img/phone/bosenc@1x_mobile.png 1x, ./img/phone/bosenc@2x_mobile.png 2x" media="(max-width:707px)">
+            <source srcset="./img/tablet/bosenc@1x_tablet.png 1x, ./img/tablet/bosenc@2x_tablet.png 2x" media="(min-width:708px)">
+            <source srcset="./img/pc/bosenc@1x_desktop.png 1x, ./img/pc/bosenc@2x_desktop.png 2x" media="(min-width:1320px)">
             <img class="nc__img" src="./img/phone/bosenc@1x_mobile.png" alt="bosenc">
           </picture>
           <div class="nc__ins">
@@ -481,7 +502,10 @@
       <section class="bgm">
         <div class="container">
           <picture>
-            <img class="bgm__img" src="./img/phone/workgirl@1x_mobile.png" alt="">
+            <source srcset="./img/phone/workgirl@1x_mobile.png 1x, ./img/phone/workgirl@2x_mobile.png 2x" media="(max-width:707px)">
+            <source srcset="./img/tablet/bgm@1x_tablet.png 1x, ./img/tablet/bgm@2x_tablet.png 2x" media="(min-width:708px)">
+            <source srcset="./img/pc/bgm@1x_desktop.png 1x, ./img/pc/bgm@2x_desktop.png 2x" media="(min-width:1320px)">
+            <img class="bgm__img" src="./img/phone/workgirl@1x_mobile.png" alt="workgirl">
           </picture>
         </div>
       </section>
@@ -520,5 +544,6 @@
          </div>
       </div>
     </footer>
+    <script type="module" src="./menu.js"></script>
   </body>
 </html>

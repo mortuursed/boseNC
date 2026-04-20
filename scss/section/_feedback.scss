@@ -68,11 +68,13 @@
     line-height: 125%;
 
     @media screen and (min-width: 708px) {
+      width: 445px;
       font-size: 20px;
       margin-bottom: 52px;
     }
 
     @media screen and (min-width: 1320px) {
+      width: 400px;
       font-size: 28px;
     }
   }

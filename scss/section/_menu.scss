@@ -1,0 +1,90 @@
+@use "../base/var" as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Или bold */
+  font-style: normal;
+}
+
+/* Светлый шрифт */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Обычно Light — это 300 */
+  font-style: normal;
+}
+
+.menu {
+  @media screen and (min-width: 1320px) {
+    display: none;
+  }
+
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 544px;
+  background-color: $action--color;
+  z-index: 1;
+  padding-top: 30px;
+  padding-left: 20px;
+
+  @media screen and (min-width:708px) {
+    height: 343px;
+  }
+
+  &__log {
+    width: 137px;
+    height: 23px;
+  }
+
+  &__list {
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: 708px) {
+      margin-top: 52px;
+    }
+  }
+
+  &__link {
+    color: $text--color;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
+    @media screen and (min-width: 708px) {
+      font-size: 16px;
+    }
+  }
+
+  &__close {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+  }
+
+  &__cross {
+    width: 18px;
+    height: 18px;
+    fill: $text--color;
+  }
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
